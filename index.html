@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test_app by Mohamed Alnawjha</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png" />
+    <!-- /favicon -->
+
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/coustom.css">
+    <!-- /css -->
+
+    <!-- bootstrap-icons -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap-icons/font/bootstrap-icons.css">
+    <!-- /bootstrap-icons -->
+
+    <!-- font -->
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <!-- /font -->
+</head>
+<body class="app ltr">
+    <div class="page">
+        <div class="page-main">
+            <!-- app-Header -->
+            <div class="app-header header bg-white d-block border-0 ps-0 py-5 sticky">
+                <div class="container-fluid main-container">
+                    <div class="d-flex top-navbar">
+                        <a class="logo-horizontal d-flex" href="index.html">
+                            <img src="assets/img/logo.png" class="header-brand-img mx-8" style="height: 50px !important;" alt="logo">
+                        </a>
+                        <div class="main-header-center ms-3 d-none d-lg-block">
+                            <input type="text" class="form-control" id="typehead" placeholder="Search …">
+                            <button class="btn px-0 pt-2"><i class="bi bi-search"></i></button>
+                        </div>
+                        <div class="d-flex order-lg-2 ms-auto header-right-icons">
+                            <!-- SEARCH -->
+                            <button class="navbar-toggler navresponsive-toggler text-danger d-lg-none ms-auto" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent-4"
+                                aria-controls="navbarSupportedContent-4" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon bi bi-three-dots-vertical"></span>
+                            </button>
+                            <div class="navbar navbar-collapse responsive-navbar p-0">
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
+                                    <div class="d-flex order-lg-2 justify-content-end">
+                                        <div class="dropdown d-lg-none d-flex">
+                                            <a href="javascript:void(0)" class="nav-link icon" data-bs-toggle="dropdown">
+                                                <i class="bi bi-search"></i>
+                                            </a>
+                                            <div class="dropdown-menu header-search dropdown-menu-start">
+                                                <div class="input-group w-100 p-2">
+                                                    <input type="text" class="form-control" id="typehead" placeholder="Search …">
+                                                    <button class="btn px-0 pt-2"><i class="bi bi-search"></i></button>                        
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex country">
+                                            <a class="nav-link icon text-center text-black" href="#">
+                                                <i class="bi bi-person fs-4"></i>
+                                            </a>
+                                        </div>
+                                        <div class="d-flex country">
+                                            <a class="nav-link icon text-center text-black" href="#">
+                                                <i class="bi bi-heart fs-5"></i>
+                                            </a>
+                                        </div>
+        
+                                        <!-- shopping-cart -->
+                                        <div class="dropdown  d-flex shopping-cart">
+                                            <a class="nav-link icon" data-bs-toggle="dropdown">
+                                                <i class="bi bi-basket"></i><span class="badge bg-primary text-white header-badge">6</span>
+                                            </a>
+                                            <div class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+                                                <div class="drop-heading border-bottom">
+                                                    <div class="d-flex">
+                                                        <h6 class="mt-1 mb-0 fs-16 fw-semibold text-primary"> My Shopping Cart</h6>
+                                                    </div>
+                                                </div>
+                                                <div class="header-dropdown-list message-menu">
+                                                    <div class="dropdown-item d-flex p-4">
+                                                        <a href="#" class="open-file"></a>
+                                                        <span class="avatar avatar-xl br-5 me-3 align-self-center cover-image">
+                                                            <img class="img-fluid rounded-2" src="assets/img/Mask.png" alt="">
+                                                        </span>
+                                                        <div class="wd-50p">
+                                                            <h5 class="mb-1">Pure Sun CBD Oil 30 ml</h5>
+                                                            <span>Status: <span class="text-success">In Stock</span></span>
+                                                            <p class="fs-13 text-muted mb-0">Quantity: 01</p>
+                                                        </div>
+                                                        <div class="ms-auto text-end d-flex fs-16">
+                                                            <span class="fs-16 text-primary d-none d-sm-block px-4">
+                                                                $14.89
+                                                            </span>
+                                                            <a href="javascript:void(0)" class="fs-16 btn p-0 cart-trash">
+                                                                <i class="bi bi-trash3 text-danger brround d-block p-2"></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="dropdown-item d-flex p-4">
+                                                        <a href="#" class="open-file"></a>
+                                                        <span class="avatar avatar-xl br-5 me-3 align-self-center cover-image">
+                                                            <img class="img-fluid rounded-2" src="assets/img/Mask.png" alt="">
+                                                        </span>
+                                                        <div class="wd-50p">
+                                                            <h5 class="mb-1">Pure Sun CBD Oil 30 ml</h5>
+                                                            <span>Status: <span class="text-danger">Out Stock</span></span>
+                                                            <p class="fs-13 text-muted mb-0">Quantity: 01</p>
+                                                        </div>
+                                                        <div class="ms-auto text-end d-flex fs-16">
+                                                            <span class="fs-16 text-primary d-none d-sm-block px-4">
+                                                                $14.89
+                                                            </span>
+                                                            <a href="javascript:void(0)" class="fs-16 btn p-0 cart-trash">
+                                                                <i class="bi bi-trash3 text-danger brround d-block p-2"></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="dropdown-item d-flex p-4">
+                                                        <a href="#" class="open-file"></a>
+                                                        <span class="avatar avatar-xl br-5 me-3 align-self-center cover-image">
+                                                            <img class="img-fluid rounded-2" src="assets/img/Mask.png" alt="">
+                                                        </span>
+                                                        <div class="wd-50p">
+                                                            <h5 class="mb-1">Pure Sun CBD Oil 30 ml</h5>
+                                                            <span>Status: <span class="text-success">In Stock</span></span>
+                                                            <p class="fs-13 text-muted mb-0">Quantity: 01</p>
+                                                        </div>
+                                                        <div class="ms-auto text-end d-flex fs-16">
+                                                            <span class="fs-16 text-primary d-none d-sm-block px-4">
+                                                                $14.89
+                                                            </span>
+                                                            <a href="javascript:void(0)" class="fs-16 btn p-0 cart-trash">
+                                                                <i class="bi bi-trash3 text-danger brround d-block p-2"></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="dropdown-item d-flex p-4">
+                                                        <a href="#" class="open-file"></a>
+                                                        <span class="avatar avatar-xl br-5 me-3 align-self-center cover-image">
+                                                            <img class="img-fluid rounded-2" src="assets/img/Mask.png" alt="">
+                                                        </span>
+                                                        <div class="wd-50p">
+                                                            <h5 class="mb-1">Pure Sun CBD Oil 30 ml</h5>
+                                                            <span>Status: <span class="text-danger">Out Stock</span></span>
+                                                            <p class="fs-13 text-muted mb-0">Quantity: 01</p>
+                                                        </div>
+                                                        <div class="ms-auto text-end d-flex fs-16">
+                                                            <span class="fs-16 text-primary d-none d-sm-block px-4">
+                                                                $14.89
+                                                            </span>
+                                                            <a href="javascript:void(0)" class="fs-16 btn p-0 cart-trash">
+                                                                <i class="bi bi-trash3 text-danger brround d-block p-2"></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="dropdown-divider m-0"></div>
+                                                <div class="dropdown-footer">
+                                                    <a class="btn btn-primary btn-pill w-sm btn-sm py-2" href="#"><i class="bi bi-bag-check"></i> Checkout</a>
+                                                    <span class="float-end p-2 fs-17 fw-semibold">Total: $500</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- /shopping-cart -->
+        
+                                        <!-- language -->
+                                        <div class="dropdown d-flex profile-1">
+                                            <a href="javascript:void(0)" data-bs-toggle="dropdown" class="nav-link  leading-none d-flex mx-3 border-dark border-start" style="padding: 0.2rem 0.9rem !important;">
+                                                <span class="country-selector p-0"><img alt="" src="assets/img/flags/us_flag.jpg" class="me-3 language"></span>
+                                                <h5 class="text-black me-1 mb-0 fs-6"> English <i class="bi bi-chevron-down"></i></h5>
+                                            </a>
+                                            <div class="dropdown-menu dropdown-menu-end dropdown-menu-arrow" style="  top: 55px !important; right: 40px !important;">
+                                                <div class="dropdown-divider m-0"></div>
+                                                <a href="javascript:void(0)" class="dropdown-item mt-3">
+                                                    <span class="country-selector"><img alt="" src="assets/img/flags/italy_flag.jpg" class="me-3 language"></span>Italy
+                                                </a>
+                                                <a href="javascript:void(0)" class="dropdown-item">
+                                                    <span class="country-selector"><img alt="" src="assets/img/flags/french_flag.jpg" class="me-3 language"></span>French
+                                                </a>
+                                                <a href="javascript:void(0)" class="dropdown-item">
+                                                    <span class="country-selector"><img alt="" src="assets/img/flags/germany_flag.jpg" class="me-3 language"></span>Germany
+                                                </a>
+                                                <a href="javascript:void(0)" class="dropdown-item">
+                                                    <span class="country-selector"><img alt="" src="assets/img/flags/russia_flag.jpg" class="me-3 language"></span>Russia
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <!-- /language -->
+        
+                                        <div class="dropdown d-flex profile-1">
+                                            <a href="javascript:void(0)" data-bs-toggle="dropdown" class="nav-link  leading-none d-flex border-dark border-start" style="padding: 0.2rem 0.9rem !important;">
+                                                <span class="country-selector p-0"></span>
+                                                <h5 class="text-black me-1 mb-0 fs-6"> USD <i class="bi bi-currency-dollar fs-5"></i> <i class="bi bi-chevron-down"></i></h5>
+                                            </a>
+                                            <div class="dropdown-menu dropdown-menu-end dropdown-menu-arrow"  style="  top: 55px !important; right: 40px !important;">
+                                                <div class="dropdown-divider m-0"></div>
+                                                <a href="javascript:void(0)" class="dropdown-item mt-3">
+                                                    <span class="country-selector"><i class="bi bi-currency-dollar fs-5"></i></span> USD
+                                                </a>
+                                                <a href="javascript:void(0)" class="dropdown-item">
+                                                    <span class="country-selector"><i class="bi bi-currency-pound fs-5"></i></span> pound
+                                                </a>
+                                                <a href="javascript:void(0)" class="dropdown-item">
+                                                    <span class="country-selector"><i class="bi bi-currency-euro fs-5"></i></span> euro
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <nav id="navbar" class="navbar">
+                        <a class="logo-horizontal d-flex" href="index.html">
+                            <img src="assets/img/logo.png" class="header-brand-img mx-8" style="height: 50px !important;" alt="logo">
+                        </a>
+                        <ul class="nav_ul">
+                          <li><a class="nav-link scrollto active" href="#">Home</a></li>
+                          <li><a class="scrollto" href="#">My orders</a></li>
+                          <li><a class="scrollto" href="#">My wallet</a></li>
+                          <li><a class="scrollto" href="#">My Address</a></li>
+                          <li><a class="scrollto" href="#">Offers</a></li>
+                          <li><a class="scrollto" href="#">Settings</a></li>
+                          <li><a class="scrollto" href="#">Ticket</a></li>
+                          <li><a class="scrollto" href="#">live chat</a></li>
+                          <li><a class="scrollto" href="#">About us</a></li>
+                        </ul>
+                        <i class="bi bi-list mobile-nav-toggle"></i>
+                    </nav>  
+                </div>
+            </div>
+            <!-- /app-Header -->
+
+            <div class="main-content app-content">
+                <div class="side-app">
+
+                    <!-- CONTAINER -->
+                    <div class="main-container container-fluid">
+
+                        <!-- ROW-1 OPEN -->
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <div class="card border-0 shadow-none">
+                                    <div class="card-body">
+                                        <div class="row row-sm">
+                                            <div class="col-xl-5 col-lg-12 col-md-12">
+                                                <div class="row">
+                                                    <div class="col-xl-12">
+                                                        <div class="product-carousel">
+                                                            <div id="Slider" class="carousel slide border" data-bs-ride="false">
+                                                                <div class="carousel-inner">
+                                                                    <div class="carousel-item p-2"><img src="assets/img/Mask.png" alt="img" class="img-fluid mx-auto d-block">
+                                                                        <div class="text-center mt-5 mb-5 btn-list">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="carousel-item p-2 active"> <img src="assets/img/Mask.png" alt="img" class="img-fluid mx-auto d-block">
+                                                                        <div class="text-center mb-5 mt-5 btn-list">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="carousel-item p-2 "> <img src="assets/img/Mask.png" alt="img" class="img-fluid mx-auto d-block">
+                                                                        <div class="text-center  mb-5 mt-5 btn-list">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="carousel-item p-2"> <img src="assets/img/Mask.png" alt="img" class="img-fluid mx-auto d-block">
+                                                                        <div class="text-center  mb-5 mt-5 btn-list">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="clearfix carousel-slider">
+                                                            <div id="thumbcarousel" class="carousel slide" data-bs-interval="t">
+                                                                <div class="carousel-inner">
+                                                                    <button class="carousel-control-prev" type="button" data-bs-target="#Slider" data-bs-slide="prev">
+                                                                        <span class="bg-white text-primary rounded-circle px-1" style="border: #214842 2px solid !important; color: #214842 !important;" aria-hidden="true">
+                                                                            <i class="bi bi-arrow-right-short fs-5"></i>
+                                                                        </span>                                                                        
+                                                                        <span class="visually-hidden">Previous</span>
+                                                                    </button>
+                                                                    <ul class="carousel-item active">
+                                                                        <li data-bs-target="#Slider" data-bs-slide-to="0" class="thumb active m-2"><img src="assets/img/Mask.png" alt="img"></li>
+                                                                        <li data-bs-target="#Slider" data-bs-slide-to="1" class="thumb m-2"><img src="assets/img/Mask.png" alt="img"></li>
+                                                                        <li data-bs-target="#Slider" data-bs-slide-to="2" class="thumb m-2"><img src="assets/img/Mask.png" alt="img"></li>
+                                                                        <li data-bs-target="#Slider" data-bs-slide-to="3" class="thumb m-2"><img src="assets/img/Mask.png" alt="img"></li>
+                                                                    </ul>
+                                                                    <button class="carousel-control-next" type="button" data-bs-target="#Slider" data-bs-slide="next">
+                                                                        <span class="bg-white text-primary rounded-circle px-1" style="border: #214842 2px solid !important; color: #214842 !important;" aria-hidden="true">
+                                                                            <i class="bi bi-arrow-left-short fs-5"></i>
+                                                                        </span>
+                                                                        <span class="visually-hidden">Next</span>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="details col-xl-7 col-lg-12 col-md-12 mt-4 mt-xl-0">
+                                                <div class="mt-2 mb-4">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div>
+                                                            <h3 class="mb-3 fw-bold text-primary">Pure Sun CBD Oil 30 ml</h3>
+                                                            <p class="text-muted float-start me-3">
+                                                                <span class="bi bi-star-fill text-warning"></span>
+                                                                <span class="bi bi-star-fill text-warning"></span>
+                                                                <span class="bi bi-star-fill text-warning"></span>
+                                                                <span class="bi bi-star-half text-warning"></span>
+                                                                <span class="bi bi-star text-warning"></span>
+                                                            </p>
+                                                            <p class="text-muted mb-4 fs-11">( 4 Customers Reviews) </p>
+                                                        </div>
+                                                        <div>
+                                                            <a href="#" class="btn btn-heart"><i class="bi bi-heart-fill"></i></a>
+                                                        </div>
+                                                    </div>
+                                                    <p class="mt-4 fs-6 lh-base" style="text-align: justify; color: #556260; letter-spacing: 1px;">
+                                                        Elementum eu facilisis sed odio morbi quis commodo odio. Mauris rhoncus aenean vel elit scelerisque mauris pellentesque. Arcu felis bibendum ut tristique et egestas. Id semper risus in hendrerit gravida rutrum. Eu mi bibendum neque egestas congue
+                                                    </p>
+                                                    <h3 class="mb-4"><span class="me-2 fw-bold text-primary fs-25">$299 USD</span></h3>
+                                                    <div class="row">
+                                                        <div class="col-2">
+                                                            <div class="mb-2 me-2 sizes bg-white shadow-sm rounded-pill px-2 py-0" style="border: #bac0bf 1px solid;">
+                                                                <div class="input-group input-indec input-indec1">
+                                                                    <span class="p-0">
+                                                                        <a class="minus btn btn-sm lh-sm p-0" >
+                                                                            <i class="bi bi-dash fs-4" style="color: #214842;"></i>
+                                                                        </a>
+                                                                    </span>
+                                                                    <input type="text" name="quantity" class="form-control text-center fw-bold lh-sm p-1 qty" style="color: #214842 !important; " value="1">
+                                                                    <span class="p-0">
+                                                                        <a class="quantity-right-plus btn btn-sm lh-sm p-0 add">
+                                                                            <i class="bi bi-plus fs-4" style="color: #214842;"></i>
+                                                                        </a>
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 col-md-10 text-center">
+                                                            <div class="btn-list">
+                                                                <a href="cart.html" class="btn ripple btn-primary me-2"> Add to cart</a>
+                                                                <a href="checkout.html" class="btn ripple btn-outline-primary"> Buy Now</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class=" mt-4 mb-5"><span class="fw-bold me-2" style="color: #214842 !important;">Category:</span><span class="fw-normal text-primary"> Oil </span></div>
+                                                    <div class=" mt-4 mb-5"><span class="fw-bold me-2" style="color: #214842 !important;">Size:</span><span class="fw-normal text-primary"> 30ml </span></div>
+                                                    <div class=" mt-4 mb-5"><span class="fw-bold me-2" style="color: #214842 !important;">Plant Type:</span><span class="fw-normal text-primary"> Sativa Dominant </span></div>
+                                                    <div class=" mt-4 mb-5"><span class="fw-bold me-2" style="color: #214842 !important;">THC:</span><span class="fw-normal text-primary"> 10.3mg/g </span></div>
+                                                    <div class=" mt-4 mb-5"><span class="fw-bold me-2" style="color: #214842 !important;">CBD:</span><span class="fw-normal text-primary"> 0.33% </span></div>
+                                                    <div class=" mt-4 mb-5"><span class="fw-bold me-2" style="color: #214842 !important;">Effects:</span><span class="fw-normal text-primary"> Calm, Happy, Relaxed </span></div>
+                                                    <div class=" mt-4 mb-5"><span class="fw-bold me-2" style="color: #214842 !important;">Tags:</span><span class="fw-normal text-primary"> Cannabis, oil </span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-12">
+                                <div class="card shadow-none border-0">
+                                    <div class="card-header d-flex justify-content-between border-0">
+                                        <div class="card-title fs-5" style="color: #121212;">Product Review</div>
+                                        <a href="#" class="card-title fs-6" style="color: #999999;">View All <i class="bi bi-chevron-right"></i></a>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="media mb-5 border-bottom">
+                                            <div class="me-3">
+                                                <a href="javascript:void(0)"> <img class="media-object rounded-circle"  src="assets/img/Ellipse 6.png"> </a>
+                                            </div>
+                                            <div class="media-body d-block d-md-flex  justify-content-start">
+                                                <div>
+                                                    <h5 class="mt-0 mb-0 fw-bold">Shin Ryujin</h5>
+                                                    <div class="text-warning mb-0">
+                                                        <i class="bi bi-star-fill text-warning"></i>
+                                                        <i class="bi bi-star-fill text-warning"></i>
+                                                        <i class="bi bi-star-fill text-warning"></i>
+                                                        <i class="bi bi-star-fill text-warning"></i>
+                                                        <i class="bi bi-star text-warning"></i>
+                                                    </div>
+                                                </div>
+                                                <p class="font-13 review-p text-muted ms-6">
+                                                    A good review includes enough detail to give others a feel for what happened. Explain which factors contributed to your positive, negative or just so-so experience.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="media mb-5 border-bottom">
+                                            <div class="me-3">
+                                                <a href="javascript:void(0)"> <img class="media-object rounded-circle"  src="assets/img/Ellipse 6 (1).png"> </a>
+                                            </div>
+                                            <div class="media-body d-block d-md-flex  justify-content-start">
+                                                <div>
+                                                    <h5 class="mt-0 mb-0 fw-bold">Jane Cooper</h5>
+                                                    <div class="text-warning mb-0">
+                                                        <i class="bi bi-star-fill text-warning"></i>
+                                                        <i class="bi bi-star-fill text-warning"></i>
+                                                        <i class="bi bi-star-fill text-warning"></i>
+                                                        <i class="bi bi-star-fill text-warning"></i>
+                                                        <i class="bi bi-star text-warning"></i>
+                                                    </div>
+                                                </div>
+                                                <p class="font-13 review-p text-muted ms-6">
+                                                    A good review includes enough detail to give others a feel for what happened. Explain which factors contributed to your positive, negative or just so-so experience.                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="media mb-5 border-bottom">
+                                            <div class="me-3">
+                                                <a href="javascript:void(0)"> <img class="media-object rounded-circle"  src="assets/img/Ellipse 6 (2).png"> </a>
+                                            </div>
+                                            <div class="media-body d-block d-md-flex  justify-content-start">
+                                                <div>
+                                                    <h5 class="mt-0 mb-0 fw-bold">Devon Lane</h5>
+                                                    <div class="text-warning mb-0">
+                                                        <i class="bi bi-star-fill text-warning"></i>
+                                                        <i class="bi bi-star-fill text-warning"></i>
+                                                        <i class="bi bi-star-fill text-warning"></i>
+                                                        <i class="bi bi-star-fill text-warning"></i>
+                                                        <i class="bi bi-star text-warning"></i>
+                                                    </div>
+                                                </div>
+                                                <p class="font-13 review-p text-muted ms-6">
+                                                    A good review includes enough detail to give others a feel for what happened. Explain which factors contributed to your positive, negative or just so-so experience.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="media mb-5 border-bottom">
+                                            <div class="me-3">
+                                                <a href="javascript:void(0)"> <img class="media-object rounded-circle"  src="assets/img/Ellipse 6 (3).png"> </a>
+                                            </div>
+                                            <div class="media-body d-block d-md-flex  justify-content-start">
+                                                <div>
+                                                    <h5 class="mt-0 mb-0 fw-bold">Jenny Wilson</h5>
+                                                    <div class="text-warning mb-0">
+                                                        <i class="bi bi-star-fill text-warning"></i>
+                                                        <i class="bi bi-star-fill text-warning"></i>
+                                                        <i class="bi bi-star-fill text-warning"></i>
+                                                        <i class="bi bi-star-fill text-warning"></i>
+                                                        <i class="bi bi-star text-warning"></i>
+                                                    </div>
+                                                </div>
+                                                <p class="font-13 review-p text-muted ms-6">
+                                                    A good review includes enough detail to give others a feel for what happened. Explain which factors contributed to your positive, negative or just so-so experience.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h3 class="p-3 mb-5 fs-3" style="color: #214842;">Top Sales Products</h3>
+                            <div class="col-xl-12">
+                                <div class="row">
+                                    <div class="col-12 col-md-6">
+                                        <div class="row product-grid6">
+                                            <div class="col-6">
+                                                <div class="product-image6 p-5">
+                                                    <ul class="icons pe-4">
+                                                        <li><a href="#" class="btn btn-success"><i class="bi bi-bag-check-fill"></i></a></li>
+                                                        <li><a href="javascript:void(0)" class="btn btn-danger"><i class="bi bi-heart-fill"></i></a></li>
+                                                    </ul>
+                                                    <a href="#" class="bg-light">
+                                                        <img class="img-fluid br-7 w-100" src="assets/img/Mask (1).png" alt="img">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 align-self-center text-start">
+                                                <div class="product-content">
+                                                    <h1 class="title fw-bold fs-20" style="color: #214842;"><a href="#">THC Full Spectrum</a></h1>
+                                                    <p class="fs-6" style="color: #556260;">
+                                                        THC 110.0-160.0mg/g
+CBD 0.0-1.0mg/g 
+                                                    </p>
+                                                    <div class="price" style="color: #214842;"><span class="ms-4">$56,599</span> $16,599
+                                                    </div>
+                                                    <div class="btn-list">
+                                                        <a href="#" class="btn ripple btn-warning"> Add to cart</a>
+                                                        <a href="#" class="btn ripple rounded-circle mt-6 btn-heart"><i class="bi bi-heart-fill"></i></a>
+                                                    </div>                                                
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <div class="row product-grid6">
+                                            <div class="col-6">
+                                                <div class="product-image6 p-5">
+                                                    <ul class="icons pe-4">
+                                                        <li><a href="#" class="btn btn-success"><i class="bi bi-bag-check-fill"></i></a></li>
+                                                        <li><a href="javascript:void(0)" class="btn btn-danger"><i class="bi bi-heart-fill"></i></a></li>
+                                                    </ul>
+                                                    <a href="#" class="bg-light">
+                                                        <img class="img-fluid br-7 w-100" src="assets/img/Mask (2).png" alt="img">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 align-self-center text-start">
+                                                <div class="product-content">
+                                                    <h1 class="title fw-bold fs-20" style="color: #214842;"><a href="#">THC Full Spectrum</a></h1>
+                                                    <p class="fs-6" style="color: #556260;">
+                                                        THC 110.0-160.0mg/g
+CBD 0.0-1.0mg/g 
+                                                    </p>
+                                                    <div class="price" style="color: #214842;"><span class="ms-4">$56,599</span> $16,599
+                                                    </div>
+                                                    <div class="btn-list">
+                                                        <a href="#" class="btn ripple btn-warning"> Add to cart</a>
+                                                        <a href="#" class="btn ripple rounded-circle mt-6 btn-heart"><i class="bi bi-heart-fill"></i></a>
+                                                    </div>                                                
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <div class="row product-grid6">
+                                            <div class="col-6">
+                                                <div class="product-image6 p-5">
+                                                    <ul class="icons pe-4">
+                                                        <li><a href="#" class="btn btn-success"><i class="bi bi-bag-check-fill"></i></a></li>
+                                                        <li><a href="javascript:void(0)" class="btn btn-danger"><i class="bi bi-heart-fill"></i></a></li>
+                                                    </ul>
+                                                    <a href="#" class="bg-light">
+                                                        <img class="img-fluid br-7 w-100" src="assets/img/Mask (3).png" alt="img">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 align-self-center text-start">
+                                                <div class="product-content">
+                                                    <h1 class="title fw-bold fs-20" style="color: #214842;"><a href="#">THC Full Spectrum</a></h1>
+                                                    <p class="fs-6" style="color: #556260;">
+                                                        THC 110.0-160.0mg/g
+CBD 0.0-1.0mg/g 
+                                                    </p>
+                                                    <div class="price" style="color: #214842;"><span class="ms-4">$56,599</span> $16,599
+                                                    </div>
+                                                    <div class="btn-list">
+                                                        <a href="#" class="btn ripple btn-warning"> Add to cart</a>
+                                                        <a href="#" class="btn ripple rounded-circle mt-6 btn-heart"><i class="bi bi-heart-fill"></i></a>
+                                                    </div>                                                
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <div class="row product-grid6">
+                                            <div class="col-6">
+                                                <div class="product-image6 p-5">
+                                                    <ul class="icons pe-4">
+                                                        <li><a href="#" class="btn btn-success"><i class="bi bi-bag-check-fill"></i></a></li>
+                                                        <li><a href="javascript:void(0)" class="btn btn-danger"><i class="bi bi-heart-fill"></i></a></li>
+                                                    </ul>
+                                                    <a href="#" class="bg-light">
+                                                        <img class="img-fluid br-7 w-100" src="assets/img/Mask (4).png" alt="img">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 align-self-center text-start">
+                                                <div class="product-content">
+                                                    <h1 class="title fw-bold fs-20" style="color: #214842;"><a href="#">THC Full Spectrum</a></h1>
+                                                    <p class="fs-6" style="color: #556260;">
+                                                        THC 110.0-160.0mg/g
+CBD 0.0-1.0mg/g 
+                                                    </p>
+                                                    <div class="price" style="color: #214842;"><span class="ms-4">$56,599</span> $16,599
+                                                    </div>
+                                                    <div class="btn-list">
+                                                        <a href="#" class="btn ripple btn-warning"> Add to cart</a>
+                                                        <a href="#" class="btn ripple rounded-circle mt-6 btn-heart"><i class="bi bi-heart-fill"></i></a>
+                                                    </div>                                                
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+            <footer id="footer" class="pt-4">
+                <div class="footer-top pb-4">
+                  <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-md-6 col-10 col-lg-3 text-start footer-links">
+                            <h4>Company</h4>
+                            <ul>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Features</a></li>
+                                <li><a href="#">Works</a></li>
+                                <li><a href="#">Career</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 col-10 col-lg-3 text-start footer-links">
+                            <h4>Help</h4>
+                            <ul>
+                                <li><a href="#">Customer Support</a></li>
+                                <li><a href="#">Delivery Details</a></li>
+                                <li><a href="#">Terms & Conditions</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 col-10 col-lg-3 text-start footer-links">
+                            <h4>Resources</h4>
+                            <ul>
+                                <li><a href="#">Free eBooks</a></li>
+                                <li><a href="#">Development Tutorial</a></li>
+                                <li><a href="#">How to - Blog</a></li>
+                                <li><a href="#">Youtube Playlist</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 col-10 col-lg-2 text-start footer-links">
+                            <h4>Install App</h4>
+                            <div class="d-block text-start">
+                                <a href="#">
+                                    <img class="img-fluid mt-4" src="assets/img/App Store.png" alt="">
+                                </a>
+                                <a href="#">
+                                    <img class="img-fluid mt-4" src="assets/img/Play Store.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+            
+                      </div>
+                    </div>
+                  </div>
+            
+                <div class="bottom-footer m-0 p-0 py-3">
+                  <div class="container">
+                    <div class="row" style="border-top: #1E293B 1px solid;">
+                      <div class="col-12 col-md-6 text-start align-self-center">
+                        <div class="text-white mt-3 fs-6">
+                            © Copyright 2022, All Rights Reserved by <a href="#">ClarityUI</a> 
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-6 text-end">
+                        <div class="social-links my-4">
+                            <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+                            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                            <a href="#" class="youtube"><i class="bi bi-youtube"></i></a>
+                            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </footer>
+
+
+            
+        </div>
+    </div>
+    
+
+    <!-- js -->
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/sticky.js"></script>
+    <!-- Perfect SCROLLBAR JS-->
+    <script src="assets/plugins/p-scroll/perfect-scrollbar.js"></script>
+    <script src="assets/plugins/p-scroll/pscroll.js"></script>
+    <script src="assets/plugins/p-scroll/pscroll-1.js"></script>
+    <!-- sidemenu js -->
+    <script src="assets/plugins/sidemenu/sidemenu.js"></script>
+    <!-- Color Theme js -->
+    <script src="assets/js/themeColors.js"></script>
+
+    <!-- coustom js -->
+    <script src="assets/js/coustom.js"></script>
+    <!-- /js -->
+</body>
+</html>
+
+<!--  
+
+
+    <header>
+        <div class="container">
+
+            <div class="row">
+                <div class="col">
+                    <a class="navbar-brand" href="#">
+                        <img src="assets/img/logo.png" alt="logo" width="40" height="40">
+                    </a>
+                </div>
+                <div class="col">
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+                <div class="col">
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+-->
