@@ -72,7 +72,7 @@ body{
 }
 
 ::selection{
-  background: var(--bs-warning);
+  background: #214842;
   color: #fff;
 }
 body::-webkit-scrollbar {
