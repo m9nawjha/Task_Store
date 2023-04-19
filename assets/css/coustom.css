@@ -323,7 +323,9 @@ btn-outline-primary:before {
 }
 @media (max-width: 991px) {
   .review-p{
-    width: 100%;
+    width: unset;
+    margin: 0;
+    padding: 0;
   }
 }
 /*******************/
@@ -395,13 +397,17 @@ btn-outline-primary:before {
 }
 
 #footer .footer-top h4 {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: normal;
   color: var(--bs-white);
   text-transform: uppercase;
   position: relative;
   letter-spacing: -0.2px;
   padding-bottom: 10px;
+}
+#footer .footer-top h4 span{
+  padding-bottom: 5px;
+  border-bottom: 2px solid var(--bs-white);
 }
 
 
